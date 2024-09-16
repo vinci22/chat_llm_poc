@@ -15,8 +15,9 @@ class State(TypedDict):
     messages: Annotated[list, add_messages]
     
 def node_agent_general(state:State):
-    pregunta = state["messages"]
+    preguntas = state["messages"]
+    pregunta_actual= state["messages"][-1].content
     baseprompt = PromptTemplate.from_template(prompts.BASE_PROMPT_GENERAL_AGENT)
-    prompt = baseprompt.format(pregunta=pregunta)
+    prompt = baseprompt.format(pregunta=pregunta_actual,contexto=preguntas)
     response = llm.invoke(prompt)
     return {"messages": [response]}
