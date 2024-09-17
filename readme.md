@@ -3,8 +3,6 @@
 Bienvenido al repositorio 2 en 1(puedes usar solo la api y consumirla con otro front si quieres )  de la API de chat avanzada basada en Mixtral(**Puedes usar otros modelos**). Este proyecto, desarrollado en Python y utilizando **Largraph**, está diseñado para proporcionar una experiencia de conversación fluida y contextualmente rica mediante la integración de agentes especializados.
 
 
-metal:  [chatea aqui](www.dummy.com)   :metal:
-
 # Componentes principales
 ## Agentes
 
