@@ -3,7 +3,7 @@
 Bienvenido al repositorio 2 en 1(puedes usar solo la api y consumirla con otro front si quieres )  de la API de chat avanzada basada en Mixtral(**Puedes usar otros modelos**). Este proyecto, desarrollado en Python y utilizando **Largraph**, está diseñado para proporcionar una experiencia de conversación fluida y contextualmente rica mediante la integración de agentes especializados.
 
 
-:metal:  [chatea aqui](www.dummy.com)   :metal:
+metal:  [chatea aqui](www.dummy.com)   :metal:
 
 # Componentes principales
 ## Agentes
@@ -56,7 +56,7 @@ El archivo **`cli_app.py`** es un script de línea de comandos (CLI) diseñado p
 Ejemplo de Uso
 Para ejecutar el script, utiliza la línea de comandos con los siguientes parámetros:
 ```
-bash>python cli_app.py --file_path /ruta/al/archivo.pdf 
+python cli_app.py --file_path /ruta/al/archivo.pdf 
                                              
 ```
 
@@ -64,7 +64,7 @@ bash>python cli_app.py --file_path /ruta/al/archivo.pdf
 Es importante tener a la mano estas 4 API_KEY y agregarlas como variables de entorno en tu equipo, con estos nombres respectivamente
 - **`PINECONE_APIKEY`**: La clave de API utilizada para autenticar y acceder a Pinecone, un servicio de almacenamiento vectorial
  - **`EXCHANGERATE_APIKEY`**: La clave de API necesaria para acceder al servicio de tasas de cambio y conversión de divisas. 
-  - **`LLM_APIKEY`**: La clave de API utilizada para autenticar y acceder a un modelo de lenguaje (LLM) proporcionado por un servicio de inteligencia artificial(de momento solo mistral). 
+  - **`LLM_APIKEY`**: La clave de API utilizada para autenticar y acceder a un modelo de lenguaje (LLM) proporcionado por un servicio de inteligencia artificial ( **de momento solo mistral**). 
 - **`API_ENDPOINT`**: url de la API en este caso el valor seria http://127.0.0.1:8000/chat/v1
 
 **es primordial tener creado un env con virtualenv o con conda en el cual tienes que instalar los paquetes en el archivo requirements.txt y ejecutar los siguientes pasos en ese ambiente**
@@ -81,8 +81,13 @@ uvicorn main:app --host "127.0.0.1" --port 8000
 ```
 
 2) ejecuta el servicio de frontEnd(chat)
+
+bash:
 ```
 cd django_chatbot && python manage.py runserve
 ```
+powershell:
+```
+cd django_chatbot; python manage.py runserver
 
-
+```
