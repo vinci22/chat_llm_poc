@@ -164,9 +164,5 @@ def manager_Agents_Multidocs(qa):
     print(llm.invoke(message).content)
 
 
-manager_Agents_Multidocs("Cuantos pesos colombianos son 300 pesos mexicanos")
 
-
-def node_unsuported_agent():
-def node_supported_agent():
     

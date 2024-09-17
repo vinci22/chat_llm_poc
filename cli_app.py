@@ -4,12 +4,11 @@ import argparse
 from tqdm import tqdm
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_huggingface import HuggingFaceEmbeddings
-from pinecone import Pinecone, ServerlessSpec
+from pinecone import ServerlessSpec
 import settings
 from langchain_pinecone import PineconeVectorStore
 from uuid import uuid4
 from langchain_community.document_loaders import PDFPlumberLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 def main(file_path):
     # Check if file exists

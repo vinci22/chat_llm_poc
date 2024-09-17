@@ -2,7 +2,6 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from graph import FriendlyResponder
-import uvicorn
 
 app = FastAPI()
 responder = FriendlyResponder()
@@ -30,6 +29,9 @@ async def respond_to_message(request: MessageRequest):
         return {"responses": responses}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-
+@app.get("/")
+async def alive():
+    return {"message":"alive"}
+    
 # if __name__ == "__main__":
 #     uvicorn.run(app, host="127.0.0.1", port=8001)

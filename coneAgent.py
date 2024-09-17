@@ -1,8 +1,5 @@
-from operator import index
-from click import prompt
 from langchain_pinecone import PineconeVectorStore
 from langchain_huggingface import HuggingFaceEmbeddings
-from tenacity import retry
 import settings 
 from langchain_pinecone import PineconeVectorStore
 from prompts import BASE_WINDOW_PROMPT_RETRIEVAL
