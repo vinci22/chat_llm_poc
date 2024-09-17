@@ -91,3 +91,6 @@ powershell:
 cd django_chatbot; python manage.py runserver
 
 ```
+
+
+###  **ya ejecutado en front debes ir a la pagina /register y registrarte**
